@@ -4177,18 +4177,7 @@ private struct KifExportActivitySheet: UIViewControllerRepresentable {
 }
 #endif
 
-private struct PreviewShellWorkaroundModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
-            content.accessibilityHidden(true)
-        } else {
-            content
-        }
-    }
-}
-
 #Preview {
     ContentView()
-    .modelContainer(for: KifuRecord.self, inMemory: true)
-        .modifier(PreviewShellWorkaroundModifier())
+        .modelContainer(for: KifuRecord.self, inMemory: true)
 }

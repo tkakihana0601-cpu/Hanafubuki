@@ -1,0 +1,14 @@
+{
+  "dart.flutterSdkPath": "/opt/homebrew/flutter",
+  "dart.enableSdkFormatter": true,
+  "dart.lineLength": 80,
+  "dart.showTodos": true,
+  "dart.completeFunctionCalls": true,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  }
+}
